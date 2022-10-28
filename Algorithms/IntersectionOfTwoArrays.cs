@@ -28,9 +28,4 @@ internal class IntersectionOfTwoArrays : IAlgorithmSolver
 
         return res.ToArray();
     }
-
-    static int CalculateTheHeightOfABinaryTree(long[] tree)
-    {
-
-    }
 }
