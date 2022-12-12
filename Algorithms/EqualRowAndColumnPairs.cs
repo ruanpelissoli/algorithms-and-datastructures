@@ -47,10 +47,10 @@ internal class EqualRowAndColumnPairs : IAlgorithmSolver
             for (int j = 0; j < grid[i].Length; j++)
             {
                 columnKey.Append(grid[j][i]);
-                columnKey.Append(",");
+                columnKey.Append(',');
 
                 rowKey.Append(grid[i][j]);
-                rowKey.Append(",");
+                rowKey.Append(',');
             }
 
             var rowKeyString = rowKey.ToString();
