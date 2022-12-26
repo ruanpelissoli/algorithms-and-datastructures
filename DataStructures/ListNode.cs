@@ -27,4 +27,18 @@ internal class ListNode
         sb.AppendLine();
         return sb.ToString();
     }
+
+    public static ListNode FromArray(int[] arr)
+    {
+        var head = new ListNode(arr[0]);
+        var current = head;
+
+        for (var i = 1; i < arr.Length; i++)
+        {
+            current.Next = new ListNode(arr[i]);
+            current = current.Next!;
+        }
+
+        return head;
+    }
 }
